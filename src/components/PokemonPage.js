@@ -27,7 +27,8 @@ updatePokemon = () => {
   let newPokemonArray = this.state.pokemonData.filter((pokemon) => {
     return pokemon.name.includes(this.state.search) })
     
-    this.setState({pokemonData: newPokemonArray})
+    // this.setState({pokemonData: newPokemonArray})
+    return newPokemonArray
 }
 
 
